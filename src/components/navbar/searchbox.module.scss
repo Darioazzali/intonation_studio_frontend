@@ -1,0 +1,36 @@
+.searchcontainer {
+  display: flex;
+  // grid-template-columns: 12fr 1fr;
+  border-radius: 0.5rem;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #313131;
+
+  input {
+    padding: 0.5rem;
+    border: none;
+    color: #f3f3f3;
+    background-color: inherit;
+    font-size: 1rem;
+    line-height: 20px;
+    border-radius: 0.5rem;
+    & :focus-visible {
+      outline-color: transparent;
+      box-shadow: none;
+    }
+  }
+
+  .icon {
+    margin-right: 1.5rem;
+    justify-self: end;
+    & * {
+      color: #676767;
+    }
+    // order: 2;
+  }
+
+  *:focus {
+    outline: none;
+  }
+}

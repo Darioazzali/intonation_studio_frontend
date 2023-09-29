@@ -1,0 +1,43 @@
+.navbar {
+  background-color: #242424;
+  color: #ababab;
+  padding: 0.6rem 0;
+  a {
+    &:hover {
+      color: inherit;
+    }
+
+    color: #ababab;
+  }
+  #navbar-brand {
+    font-size: 22px;
+  }
+}
+
+.searchbox {
+  width: 100%;
+}
+
+.toggle {
+  color: #ababab;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.collapse > div {
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .collapse > div {
+    padding: 0;
+    text-align: center;
+  }
+
+  .searchbox {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+}

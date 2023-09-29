@@ -1,0 +1,41 @@
+@import "./../../variables.scss";
+
+$background-contents-gray: #242424;
+.container {
+  background-color: $background-contents-gray;
+  width: 100%;
+  margin: 0.5rem;
+  text-align: start;
+  padding: 0.5rem 1rem;
+}
+.title {
+  font-size: 32px;
+  color: white;
+  font-weight: 900;
+}
+.itemNumber {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  color: #676767;
+}
+// @media (min-width: 600px) {
+//   .route-header {
+//     &-container {
+//       background-color: $background-contents-gray;
+//       width: 70%;
+//       margin: 0;
+//       text-align: start;
+//       padding: 0.5rem 1rem;
+//     }
+//     &-title {
+//       font-size: 32px;
+//       color: white;
+//       font-weight: 900;
+//     }
+//     &-item-number {
+//       margin-left: 0.5rem;
+//       font-size: 1rem;
+//       color: #676767;
+//     }
+//   }
+// }

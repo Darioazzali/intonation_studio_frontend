@@ -1,0 +1,39 @@
+.noTutorial {
+  //   min-width: 760px;
+  background-color: #1d1d1d;
+  //   $background-contents-gray;
+  display: flex;
+  margin: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem;
+  gap: 64px;
+  font-size: 32px;
+  font-weight: 300;
+  color: #f3f3f3;
+  padding: 54px;
+  min-height: 200px;
+  & button {
+    padding: 22px 32px;
+    font-size: 1.5rem;
+    line-height: 30px;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: 700;
+    background-color: #f1c40f;
+    color: #121212;
+    & svg {
+      font-size: 30px;
+      margin-left: 24px;
+      line-height: 1.5;
+    }
+  }
+}
+
+.feedbackFace {
+  //   margin-right: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}

@@ -1,0 +1,100 @@
+@import "../../variables.scss";
+
+.icon {
+  margin-right: 1rem;
+}
+
+.container {
+  padding: 1rem;
+  background-color: $background-contents-gray;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.pageContainer {
+  .title {
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: solid #595959 1px;
+    font-size: 1.5rem;
+  }
+
+  label {
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .subLabel {
+    margin-top: 4px;
+    color: #f3f3f3;
+    font-weight: 300;
+  }
+
+  textarea {
+    resize: none;
+    background-color: transparent;
+    border: 1px solid #595959;
+    width: 100%;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 6px;
+    min-height: 250px;
+    margin-bottom: 0.25;
+  }
+
+  select {
+    background-color: transparent;
+    border-radius: 5px;
+    border: #595959 solid 1px;
+    color: #f3f3f3;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 4px 8px;
+    line-height: 1.5rem;
+    width: 100%;
+  }
+
+  input {
+    background-color: transparent;
+    border: 1px solid #595959;
+    width: 100%;
+    color: white;
+    border-radius: 6px;
+    margin-left: 0;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+    background-color: #f1c40f;
+    border-color: transparent;
+    color: #121212;
+    font-weight: 700;
+    font-size: 22px;
+    // line-height: 1rem;
+    padding: 1rem;
+    border-radius: 6px;
+    svg {
+      margin-right: 24px;
+      font-size: 30px;
+      line-height: 22px;
+    }
+
+    @media (max-width: 300px) {
+      svg {
+        margin-right: 12px;
+      }
+    }
+  }
+}
+
+@media (min-width: 760px) {
+  .pageContainer {
+    width: 760px;
+  }
+}

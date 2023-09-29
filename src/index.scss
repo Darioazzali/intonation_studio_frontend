@@ -1,0 +1,60 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #121212;
+  color: #f3f3f3;
+}
+
+code {
+  font-family: "Lato-Light";
+}
+
+.all-page-loader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($color: #000000, $alpha: 0.2);
+  &-container {
+    position: relative;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 12px;
+}
+
+.something-wrong {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+#disappear {
+  display: none;
+}
+@include media-breakpoint-up(md) {
+  .content-container {
+    width: 768px;
+  }
+  #disappear {
+    display: block;
+    padding: 40px;
+  }
+}
+@import "./variables.scss";
+@import "/src/components/tutorial/wave/Wave.scss";
+@import "./components//record_button/recorderbutton.scss";
